@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Guard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Review Guard</h1>
+    <form action="/predict" method="post">
+        <label for="review">Enter your review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Check Review">
+    </form>
+</body>
+</html>
